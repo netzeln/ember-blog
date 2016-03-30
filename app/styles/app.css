@@ -1,7 +1,19 @@
 header {
   text-align: center;
+  -webkit-text-stroke: 2px tan;
+  font-family: sans-serif;
+  height: 400px;
+  background-image: url(/img/trump_vs_sanders.jpg);
+  background-position: center;
+  background-size: auto;
 }
 
+body {
+  background-color: #d1e0e0;
+}
+.post-tile{
+  background-color: white;
+}
 .post {
   margin-left: 150px;
   margin-top: 60px;

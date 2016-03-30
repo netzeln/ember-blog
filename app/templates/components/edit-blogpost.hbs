@@ -19,7 +19,8 @@
     <label for="category">Type</label>
   {{input value=category type="text" id="category" placeholder=blogpost.category}}
   </div>
+  <br>
   <button class="btn btn-success"{{action 'update' blogpost}}>Submit Edits</button>
 </form>
-
+<br>
 <button class="btn btn-danger"{{action 'delete' blogpost}}>Delete this Post</button>
