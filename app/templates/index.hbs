@@ -1,1 +1,6 @@
-{{outlet}}
+
+<div>
+  {{#each model.blogposts as |blogpost|}}
+    {{blogpost-tile blogpost=blogpost}}
+  {{/each}}
+</div>
