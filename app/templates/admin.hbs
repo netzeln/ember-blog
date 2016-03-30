@@ -6,7 +6,7 @@
       <h4>click to edit</h4>
       <ul>
         {{#each model as |blogpost|}}
-          <li>{{blogpost.title}}</li>
+          <li>{{#link-to 'postedit' blogpost.id}}{{blogpost.title}}{{/link-to}}</li>
         {{/each}}
       </ul>
     </div>
