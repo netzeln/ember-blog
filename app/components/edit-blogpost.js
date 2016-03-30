@@ -11,6 +11,11 @@ export default Ember.Component.extend({
         category: this.get('category')
       };
       this.sendAction('update', blogpost, params);
+    },
+    delete(blogpost){
+      if (confirm('Are you sure you want to delete this story?')){
+      this.sendAction('delete', blogpost);
+      }
     }
   }
 });
