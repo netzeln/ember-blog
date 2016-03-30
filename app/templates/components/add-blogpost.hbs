@@ -1,0 +1,23 @@
+<form>
+  <div class="form-group">
+    <label for="title">Title</label>
+  {{input value=title type="text" id="title"}}
+  </div>
+  <div class="form-group">
+    <label for="author">Author</label>
+  {{input value=author type="text" id="author"}}
+  </div>
+  <div class="form-group">
+    <label for="date">Date</label>
+  {{input value=date type="text" id="date"}}
+  </div>
+  <div class="form-group">
+    <label for="article">Article</label>
+  {{textarea row=8 value=article type="text" id="article"}}
+  </div>
+  <div class="form-group">
+    <label for="category">Type</label>
+  {{input value=category type="text" id="category"}}
+  </div>
+  <button {{action 'save' blogpost}}>Submit</button>
+</form>

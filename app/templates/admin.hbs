@@ -1,0 +1,18 @@
+<div class="container post">
+  <h2>Administrative Features:</h2>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Current Blogposts</h3>
+      <h4>click to edit</h4>
+      <ul>
+        {{#each model as |blogpost|}}
+          <li>{{blogpost.title}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h3>Add A New Blogpost</h3>
+      {{add-blogpost save="save"}}
+    </div>
+  </div>
+</div>
