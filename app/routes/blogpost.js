@@ -22,10 +22,10 @@ actions:{
 
   deleteComment(comment){
     var blogpost = comment.get('blogpost');
-    console.log(comment);
+    
     console.log("ye ol blogpost", blogpost);
     comment.destroyRecord().then(function(){
-      blogpost.save();
+      return blogpost.save();
     });
     this.transitionTo('blogpost');
   },
