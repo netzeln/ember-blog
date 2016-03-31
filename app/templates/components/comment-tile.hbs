@@ -1,5 +1,13 @@
 <div class="post comment">
   <h4>{{comment.user}}: {{comment.date}}</h4>
   <p>{{comment.text}}</p>
-  
+
+  <div class="addReply">
+    <button> Reply</button>
+    <button class="btn btn-danger" {{action 'deleteComment' comment}}>DELETE</button>
+  </div>
+
+  <div>
+  <!-- {{reply-tile}} -->
+</div>
 </div>

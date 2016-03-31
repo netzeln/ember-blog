@@ -6,9 +6,9 @@
 
 <div class="post">
   <h3>Post a Comment or Reply</h3>
-  {{comment-post comment=comment saveComment2='saveComment3' blogpost=model }}
+  {{comment-post comment=comment saveComment2='saveComment3' blogpost=model}}
   <br>
     {{#each blogpost.comments as |comment|}}
-      {{comment-tile comment=comment}}
+      {{comment-tile comment=comment deleteComment='deleteComment'}}
     {{/each}}
 </div>
