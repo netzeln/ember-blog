@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         // isReplyTo: this.get('isReplyTo')
       };
       console.log("at save 1:", params);
-      console.log("heello:", this.blogpost);
+      console.log("heello1:", this.blogpost);
       this.sendAction('saveComment2', params);
       }
     }
